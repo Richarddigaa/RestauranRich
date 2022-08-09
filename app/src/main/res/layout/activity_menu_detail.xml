@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".menu.MenuDetailActivity">
+
+    <TextView
+        android:id="@+id/Tv_Kategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kategori"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Tv_NamaMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nama"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_Kategori" />
+
+    <ImageView
+        android:id="@+id/Img_Menu"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/Tv_NamaMenu"
+        app:layout_constraintStart_toStartOf="@+id/Tv_NamaMenu"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_NamaMenu"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/Tv_HargaMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Harga"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/Img_Menu"
+        app:layout_constraintStart_toStartOf="@+id/Img_Menu"
+        app:layout_constraintTop_toBottomOf="@+id/Img_Menu" />
+
+    <TextView
+        android:id="@+id/Tv_DeskripsiMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Deskripsi"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/Tv_HargaMenu"
+        app:layout_constraintStart_toStartOf="@+id/Tv_HargaMenu"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_HargaMenu" />
+
+    <Button
+        android:id="@+id/Btn_Kurang"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="-"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Tv_Jumlah"
+        app:layout_constraintEnd_toStartOf="@+id/Tv_Jumlah"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Btn_Tambah"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Tv_Jumlah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Tv_Jumlah" />
+
+    <TextView
+        android:id="@+id/Tv_Jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/Btn_Tambah"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Btn_Kurang"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_DeskripsiMenu" />
+
+    <TextView
+        android:id="@+id/Tv_Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Total"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/Btn_Tambah"
+        app:layout_constraintStart_toStartOf="@+id/Btn_Kurang"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_Jumlah" />
+
+    <Button
+        android:id="@+id/Btn_Pesan"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Pesan"
+        app:layout_constraintEnd_toEndOf="@+id/Tv_Total"
+        app:layout_constraintStart_toStartOf="@+id/Tv_Total"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_Total" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

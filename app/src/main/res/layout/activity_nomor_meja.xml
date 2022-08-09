@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pesanan.NomorMejaActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TILayout_NomerMeja"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Et_NomerMeja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nomer Meja"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/Btn_Lanjut"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Lanjut"
+        app:layout_constraintEnd_toEndOf="@+id/TILayout_NomerMeja"
+        app:layout_constraintStart_toStartOf="@+id/TILayout_NomerMeja"
+        app:layout_constraintTop_toBottomOf="@+id/TILayout_NomerMeja" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
